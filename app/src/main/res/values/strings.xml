@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ClientSW</string>
+    <string name="prenom">Prenom</string>
+    <string name="nom">Nom</string>
+    <string name="login">Login</string>
+    <string name="passwd">Password</string>
+</resources>
