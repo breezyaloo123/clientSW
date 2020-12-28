@@ -4,4 +4,12 @@
     <string name="nom">Nom</string>
     <string name="login">Login</string>
     <string name="passwd">Password</string>
+    <string name="name_produit">Nom du Produit</string>
+    <string name="price">Prix</string>
+    <string name="quantite">Quantite</string>
+    <string name="name_client">Nom</string>
+    <string name="prenom_client">Prenom</string>
+    <string name="Adresse">Adresse</string>
+    <string name="tel">Telephone</string>
+    <string name="Pseudo">Pseudo</string>
 </resources>

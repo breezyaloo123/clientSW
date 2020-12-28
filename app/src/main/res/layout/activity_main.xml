@@ -1,76 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
+    android:padding="8dp"
     android:background="@android:color/holo_blue_light"
     tools:context=".MainActivity">
-  <LinearLayout
-      android:id="@+id/layout_welcome"
-      android:layout_width="match_parent"
-      android:gravity="center_horizontal"
-      android:layout_height="wrap_content">
-      <ImageView
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+<!--<TextView-->
+<!--    android:id="@+id/textview1"-->
+<!--    android:textColor="@android:color/black"-->
+<!--    android:layout_width="wrap_content"-->
 
-          android:id="@+id/welcome"
-          android:src="@mipmap/welcome"
-          android:layout_width="300dp"
-          android:layout_height="200dp"/>
-  </LinearLayout>
-
+<!--    android:layout_height="wrap_content"/>-->
+<!--    </androidx.core.widget.NestedScrollView>-->
     <LinearLayout
-        android:id="@+id/layout1"
-        android:layout_below="@id/layout_welcome"
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:id="@+id/prenom"
-            android:text="@string/login"
-            android:layout_marginLeft="20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:weightSum="9">
         <EditText
-            android:id="@+id/prenom_editext"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"/>
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/layout2"
-        android:layout_below="@id/layout1"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:id="@+id/nom"
-            android:text="@string/passwd"
+            android:id="@+id/recherche"
             android:layout_width="wrap_content"
-            android:layout_marginLeft="20dp"
+            android:layout_weight="6"
             android:layout_height="wrap_content"/>
-        <EditText
-            android:id="@+id/nom_editext"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_below="@id/layout2"
-        android:gravity="center_horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
         <Button
-            android:layout_marginTop="50dp"
-            android:id="@+id/button_send"
-            android:text="Connexion"
-            android:layout_width="150dp"
-            android:layout_height="50dp"/>
+            android:id="@+id/btn_recherche"
+            android:layout_width="100dp"
+            android:background="@android:color/holo_blue_dark"
+            android:layout_weight="2"
+            android:text="rechercher"
+            android:layout_height="wrap_content"/>
+
     </LinearLayout>
 
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recycleview1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
 
-</RelativeLayout>
+
+</LinearLayout>
